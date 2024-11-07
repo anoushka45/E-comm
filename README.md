@@ -18,9 +18,6 @@ Welcome to **Urbanaura**! This is a modern e-commerce website built with Next.js
 - **Sanity.io**: A headless CMS for managing content and products.
 - **Stripe**: Payment processing platform for handling transactions securely.
 
-## Usage
+##Screenshots
+![alt text](homePage.png)
 
-To run the development server, use:
-
-```bash
-npm run dev
