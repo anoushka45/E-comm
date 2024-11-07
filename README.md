@@ -20,4 +20,5 @@ Welcome to **Urbanaura**! This is a modern e-commerce website built with Next.js
 
 ##Screenshots
 ![alt text](homePage.png)
+![alt text](image.png)
 
