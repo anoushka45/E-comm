@@ -1,3 +1,5 @@
+
+import AddToBag from "@/app/components/AddToBag";
 import ImageGallery from "@/app/components/ImageGallery";
 import { fullProduct } from "@/app/interface";
 import { client } from "@/app/lib/sanity";
@@ -5,10 +7,16 @@ import { Button } from "@/components/ui/button";
 import { Star, Truck } from "lucide-react";
 
 async function getData(slug: string) {
-  const query = `*[_type=='product' && slug.current == $slug][0]{
-    _id, images, price, name, description, "slug": slug.current,
+  const query = `*[_type == "product" && slug.current == $slug][0]{
+    _id, 
+    images, 
+    price, 
+    name, 
+    description, 
+    "slug": slug.current,
     "categoryName": category->name
   }`;
+  
   const data = await client.fetch(query, { slug });
   return data;
 }
@@ -24,7 +32,7 @@ export default async function ProductPage({
   const data: fullProduct = await getData(slug);
 
   return (
-    <div className="bg-white">
+    <div className="bg-white animate-fadeIn">
       <div className="mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="grid gap-8 md:grid-cols-2">
           <ImageGallery images={data.images} />
@@ -52,7 +60,14 @@ export default async function ProductPage({
                 <span className="text-sm">2-4 days shipping</span>
               </div>
               <div className="flex gap-2.5 ">
-                <Button>Add to Bag</Button>
+                <AddToBag 
+                currency="USD"
+                description={data.description}
+                image={data.images[0]}
+                name={data.name}
+                price={data.price}
+                key={data._id}
+                />
                 <Button variant={"secondary"}>Checkout Now!</Button>
               </div>
               <p className="mt-12 text-base text-gray-500 tracking-wide">{data.description}</p>

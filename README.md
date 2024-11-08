@@ -1,4 +1,4 @@
-# Urbanaura
+# UrbanAura
 
 Welcome to **Urbanaura**! This is a modern e-commerce website built with Next.js 15, TypeScript, Tailwind CSS, Sanity.io for content management, and Stripe for secure payment processing.
 
@@ -18,7 +18,8 @@ Welcome to **Urbanaura**! This is a modern e-commerce website built with Next.js
 - **Sanity.io**: A headless CMS for managing content and products.
 - **Stripe**: Payment processing platform for handling transactions securely.
 
-##Screenshots
+##Screenshots(view all in the screenshots folder)
 ![alt text](homePage.png)
 ![alt text](image.png)
+![alt text](image-1.png)
 
