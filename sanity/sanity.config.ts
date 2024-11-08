@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'ecomm-nextjs',
 
-  projectId: '1cbsugyl',
+  projectId: 'your_id',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
