@@ -16,10 +16,11 @@ Welcome to **Urbanaura**! This is a modern e-commerce website built with Next.js
 - **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 - **Sanity.io**: A headless CMS for managing content and products.
-- **Stripe**: Payment processing platform for handling transactions securely.
 
 ##Screenshots(view all in the screenshots folder)
 ![alt text](homePage.png)
+
 ![alt text](image.png)
+
 ![alt text](image-1.png)
 
